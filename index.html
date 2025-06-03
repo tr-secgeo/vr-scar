@@ -45,11 +45,11 @@
 		This content requires HTML5 &amp; Javascript.
 		</div>
 
-		 <div id="license-warningg">
+	        <div id="license-warning">
                    <strong>Bu sanal turun lisans süresi sona ermiştir.</strong><br><br>
                    Yayına devam edebilmek için lütfen lisansınızı yenileyiniz.<br><br>
                    İletişim: <a href="mailto:secgeo.muhendislik@gmail.com">secgeo.muhendislik@gmail.com</a>
-                 </div>
+                </div>
 		
 		<script type="text/javascript">
 			// create the object player with the container
@@ -59,16 +59,14 @@
 			// load the configuration
 			window.addEventListener("load", function() {
 				obj.readConfigUrlAsync("object.xml?ts=88803545");
-				  const licenseEndDate = new Date("2025-07-03T21:45:00");
-                                  const now = new Date();
-                                  if (now > licenseEndDate) {
+				const licenseEndDate = new Date("2025-07-03T21:45:00");
+                                const now = new Date();
+                                if (now > licenseEndDate) {
                                        document.getElementById("container").style.display = "none";
                                        document.getElementById("license-warning").style.display = "flex";
-				  };
-		       
-                  });
-			
-			
+				  };		       
+                       });
+				
 		</script>
 	
 		<noscript>
