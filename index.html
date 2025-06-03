@@ -33,6 +33,15 @@
                 Bu sanal turun lisans süresi sona ermiştir. Yayına devam edebilmek için lisansı yenileyiniz.<br />
                 İletişim: secgeo.muhendislik@gmail.com
                 </div>
+		<script>
+                       const licenseEndDate = new Date("2026-05-31T23:59:59");
+                       const today = new Date();
+
+                       if (today > licenseEndDate) {
+                                document.getElementById("license-warning").style.display = "flex";
+                                document.getElementById("vr-frame").style.display = "none";
+                        }
+                </script>
 		<script type="text/javascript">
 			// create the object player with the container
 			obj=new object2vrPlayer("container");
@@ -42,13 +51,7 @@
 			window.addEventListener("load", function() {
 				obj.readConfigUrlAsync("object.xml?ts=88803545");
 			});
-			const licenseEndDate = new Date("2025-06-3T12:05:00");
-                        const today = new Date();
-
-                        if (today > licenseEndDate) {
-                                document.getElementById("license-warning").style.display = "flex";
-                                document.getElementById("vr-frame").style.display = "none";
-                        }
+			
 			
 		</script>
 		<noscript>
