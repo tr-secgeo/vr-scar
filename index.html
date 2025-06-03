@@ -42,6 +42,18 @@
                                 document.getElementById("vr-frame").style.display = "none";
                         }
                 </script>
+		<script type="text/javascript">
+			// create the object player with the container
+			obj=new object2vrPlayer("container");
+			// add the skin object
+			skin=new object2vrSkin(obj);
+			// load the configuration
+			window.addEventListener("load", function() {
+				obj.readConfigUrlAsync("object.xml?ts=88803545");
+			});
+			
+			
+		</script>
 	
 		<noscript>
 			<p><b>Please enable Javascript!</b></p>
